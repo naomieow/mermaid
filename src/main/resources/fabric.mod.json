@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "mermaid",
+	"version": "${version}",
+	"name": "mermaid",
+	"description": "Adds fantasy creatures to Minecraft!",
+	"authors": [
+		"naomieow"
+	],
+	"contact": {
+		"homepage": "https://www.naomieow.xyz/",
+		"sources": "https://github.com/naomieow/mermaid/"
+	},
+	"license": "GNU LGPLv3",
+	"icon": "assets/mermaid/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"xyz.naomieow.mermaid.MermaidMod"
+		],
+		"client": [
+		]
+	},
+	"mixins": [
+		"mermaid.mixins.json",
+		{
+			"config": "mermaid.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.19.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+	}
+}
